@@ -4,6 +4,7 @@ import { Module } from "@nestjs/common";
 import { ServeStaticModule } from "@nestjs/serve-static";
 import { MongooseModule } from "@nestjs/mongoose";
 import { CommonModule } from './common/common.module';
+import { SeedModule } from './seed/seed.module';
 
 
 @Module({
@@ -16,7 +17,9 @@ import { CommonModule } from './common/common.module';
 
         PokemonModule,
 
-        CommonModule
+        CommonModule,
+
+        SeedModule
     ]
 })
 export class AppModule {}

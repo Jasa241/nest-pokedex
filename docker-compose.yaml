@@ -10,4 +10,4 @@
       environment:
         MONGODB_DATABASE: nest-pokemon
       volumes:
-      - ./mpmgo:/data/db
+      - ./mongo:/data/db
