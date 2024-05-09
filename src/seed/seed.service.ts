@@ -35,8 +35,6 @@ export class SeedService {
 
     const result = await this.pokemonModel.insertMany(listpokemon);
 
-      console.log(result)
-
     return result;
   }
 }
